@@ -23,14 +23,18 @@ jobs:
       - uses: julia-actions/setup-julia@v2
         with:
           version: '1.12' # Set to your desired Julia version
-      
+      - name: Install Python Dependencies (sympy)
+        run: |
+          # The -m flag ensures pip is run as a module, which is robust
+          python3 -m pip install sympy
+          
       # Step to install Documenter.jl and your package dependencies
       - name: Install dependencies
         run: julia --project=docs/ -e '
           using Pkg;
           Pkg.develop(PackageSpec(path=pwd()));
-          Pkg.instantiate()'
-      
+          Pkg.instantiate();
+         
       # Step to build and deploy the documentation
       - name: Build and deploy
         env:

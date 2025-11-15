@@ -32,14 +32,13 @@ r = [cos(t), sin(t), t]
 t₀ = π/4
 
 
-T = Tangent(r, t, t₀) or T = Tnagent(r,t)
+T = Tangent(r, t, t₀) 
 N = Norm
 
 # Curvature and torsion
-κ = curvature(r, t₀)
-τ = torsion(r, t₀)
-println("Curvature: κ = ", κ)
-println("Torsion:   τ = ", τ)
+κ = Curvature(r, t, t₀)
+τ = Torsion(r, t, t₀)
+
 ```
 
 ## Symbolic Computation
@@ -51,10 +50,10 @@ using Symbolics
 r_sym = [cos(t), sin(t), t]
 
 # Symbolic tangent
-T_sym = tangent_symbolic(r_sym, t)
+T_sym = Tangent(r_sym, t)
 
 # Symbolic curvature
-κ_sym = curvature_symbolic(r_sym, t)
+κ_sym = Curvature(r_sym, t)
 ```
 
 ## Examples

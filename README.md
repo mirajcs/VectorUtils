@@ -91,15 +91,7 @@ For detailed documentation, examples, and API reference, visit:
 
 📚 **[Documentation](https://mirajcs.github.io/VectorUtils.jl/)**
 
-## Mathematical Background
 
-VectorUtils implements the Frenet-Serret formulas for space curves:
-
-- **Tangent**: $T(t) = \dfrac{r'(t)}{||r'(t)||}$
-- **Curvature**: $\kappa(t) = \dfrac{||r'(t) × r''(t)||}{||r'(t)||^3}$
-- **Normal**: $N(t) = \dfrac{T'(t)}{ ||T'(t)||}$
-- **Binormal**: $B(t) = T(t) × N(t)$
-- **Torsion**: $τ(t) = \dfrac{(r'(t) × r''(t)) · r'''(t)}{||r'(t) × r''(t)||^2}$
 
 ## Contributing
 

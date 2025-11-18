@@ -297,7 +297,7 @@ function ArcLengthParametrization(curve::Vector, s::Sym; symbolic=true)
         
         # Check if result contains "Integral" (unevaluated integral)
         if occursin("Integral", string(result))
-            error("No closed-form solution found for arc length integral")
+        error("No closed-form solution found for arc length integral")
         end
         
         println("Symbolic result: ", result)

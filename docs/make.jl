@@ -1,9 +1,9 @@
 using Documenter
-using GeometryToolkit  # Was: VectorUtils
+using ParametricCurves
 
 makedocs(
-    sitename = "GeometryToolkit.jl",
-    modules = [GeometryToolkit],  # Was: VectorUtils
+    sitename = "ParametricCurves.jl",
+    modules = [ParametricCurves],
     pages = [
         "Home" => "index.md",
         "API Reference" => "api.md"

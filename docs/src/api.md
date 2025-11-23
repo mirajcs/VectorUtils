@@ -4,7 +4,7 @@
 
 ## Functions
 ```@autodocs
-Modules = [GeometryToolkit]
+Modules = [ParametricCurves]
 ```
 
 ## Index
